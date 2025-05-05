@@ -1,4 +1,4 @@
 * linguist-vendored=false
 .* linguist-vendored=false
 .git* linguist-vendored=true
-.gitattributes* linguist-vendored=true
+.gitattributes linguist-vendored=true
