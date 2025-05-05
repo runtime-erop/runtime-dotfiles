@@ -1,0 +1,49 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "color": "37"
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "memory",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "break"
+  ],
+
+  "logo": {
+    "color": {
+      "1": "38;2;150;205;251",
+      "2": "38;2;150;205;251"
+    }
+  },
+  "battery-percent-color-red": "38;2;255;0;0",
+  "battery-percent-color-yellow": "38;2;255;176;0",
+  "battery-percent-color-green": "38;2;0;255;128",
+
+  "memory-percent-color-red": "38;2;255;0;0",
+  "memory-percent-color-yellow": "38;2;255;176;0",
+  "memory-percent-color-green": "38;2;0;255;128",
+
+  "disk-percent-color-red": "38;2;255;0;0",
+  "disk-percent-color-yellow": "38;2;255;176;0",
+  "disk-percent-color-green": "38;2;0;255;128"
+}
