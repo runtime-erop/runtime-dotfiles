@@ -1,0 +1,99 @@
+configuration {
+    modi: "window,run,ssh,drun,network:~/.config/waybar/scripts/networkmanager.sh";
+    show-icons: true;
+    font: "Fira Code 12";
+}
+
+* {
+    bg: #1a1a1a;
+    bg-alt: #252525;
+    fg: #96cdfb;
+    fg-alt: #7aa2f7;
+    red: #f7768e;
+    blue: #7aa2f7;
+    aqua: #7dcfff;
+    
+    background-color: transparent;
+    text-color: @fg;
+    border-color: @blue;
+    
+    selected-normal-foreground: #000000;
+    selected-normal-background: @fg;
+    selected-active-foreground: #000000;
+    selected-active-background: @aqua;
+    selected-urgent-foreground: #000000;
+    selected-urgent-background: @red;
+    
+    alternate-normal-background: @bg-alt;
+    alternate-active-background: @bg-alt;
+    alternate-urgent-background: @bg-alt;
+    
+    spacing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    background-color: @bg;
+    border: 2px;
+    border-color: @border-color;
+    border-radius: 15px;
+    width: 300px;
+    location: northeast;
+    anchor: northeast;
+    x-offset: -15px;
+    y-offset: 40px;
+}
+
+mainbox {
+    background-color: @bg;
+    children: [listview];
+    spacing: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+listview {
+    background-color: @bg;
+    lines: 8;
+    dynamic: true;
+    scrollbar: false;
+    spacing: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+element {
+    background-color: @bg;
+    text-color: @fg;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 0;
+}
+
+element selected {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+message {
+    background-color: @bg;
+    border: 0;
+    padding: 0;
+}
+
+textbox {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+prompt {
+    background-color: @bg;
+    text-color: @fg;
+    padding: 8px 12px;
+}

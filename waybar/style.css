@@ -1,0 +1,91 @@
+* {
+    all: unset;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    color:#96cdfb ;
+    margin-top: 10px;
+}
+
+/* Workspaces */
+#workspaces {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 0.5rem;
+}
+
+#workspaces button {
+    color: #96cdfb;
+    padding: 0 0.55rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+}
+
+#workspaces button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Modules */
+#clock, #battery, #cpu, #memory, #backlight, 
+#network, #pulseaudio, #language, #custom-archlogo {
+    background-color: rgba(0, 0, 0, 0);
+    color: #96cdfb;
+    padding: 0 0.8rem;
+    margin: 0 0.1rem;
+}
+
+tooltip {
+    border: 2px solid #96cdfb;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 10px 3px 10px 3px;
+    color: #96cdfb;
+}
+
+/* Active states */
+#battery.charging {
+    color: #64f99d;
+}
+
+#battery.critical:not(.charging) {
+    color: #fc5353;
+}
+
+#battery.warning:not(.charging) {
+    color: #ffec5b;
+}
+
+#network.disconnected {
+    color: #fc5353;
+}
+
+/* Clock */
+#clock {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    font-family: monospace;
+}
+
+/* Separator */
+.middle-separator {
+    background-color: gray;
+    padding: 0 0.03rem;
+}
+
+/* Window module */
+#window {
+    background-color: rgba(0, 0, 0, 0);
+    color: #96cdfb;
+    padding: 0 1rem;
+}
+
+window#waybar.empty #window {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
+    border: none;
+}
